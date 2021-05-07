@@ -1,6 +1,7 @@
 #include <Adafruit_MAX31855.h>
 #include "SSD1306Wire.h" // legacy include: `#include "SSD1306.h"` https://github.com/ThingPulse/esp8266-oled-ssd1306
 #include <Arduino.h>
+#include <string.h>
 #include <SPI.h>
 
 using namespace std;
@@ -77,6 +78,12 @@ void loop()
   {
     Serial.print("C = ");
     Serial.println(c);
+
+    display.clear();
+    display.setFont(ArialMT_Plain_16); // Font and size
+    display.setTextAlignment(TEXT_ALIGN_LEFT);
+    display.drawString(20, 20, String(c));
+    display.display();
   }
   //Serial.print("F = ");
   //Serial.println(thermocouple.readFahrenheit());
