@@ -3,4 +3,4 @@ Digital thermometer using LILYGO® TTGO T-Lite W5500 ESP32 https://www.aliexpres
 
 
 
-LILYGO® TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-C USB Programming Development Board
+LILYGO® TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch (128x64) Oled Type-C USB Programming Development Board
