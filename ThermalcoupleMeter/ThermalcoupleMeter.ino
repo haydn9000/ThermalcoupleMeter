@@ -1,4 +1,3 @@
-#include <Open_Sans_SemiBold_40>
 #include <Adafruit_MAX31855.h>
 #include "SSD1306Wire.h" // legacy include: `#include "SSD1306.h"` https://github.com/ThingPulse/esp8266-oled-ssd1306
 #include <Arduino.h>
@@ -63,7 +62,7 @@ void loop()
     Serial.println("Something wrong with thermocouple!");
 
     display.clear();
-    display.setFont(Open_Sans_SemiBold_40); // Font and size
+    display.setFont(ArialMT_Plain_24); // Font and size
     display.setTextAlignment(TEXT_ALIGN_CENTER);
     display.drawString(64, 32, "ERROR");
     display.display();
@@ -74,9 +73,9 @@ void loop()
     Serial.println(c);
 
     display.clear();
-    display.setFont(Open_Sans_SemiBold_40); // Font and size
+    display.setFont(ArialMT_Plain_24); // Font and size
     display.setTextAlignment(TEXT_ALIGN_CENTER);
-    display.drawString(64, 32, String(c));
+    display.drawString(64, 16, String(c)+"C");
     display.display();
   }
   //Serial.print("F = ");
