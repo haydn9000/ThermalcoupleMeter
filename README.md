@@ -3,6 +3,7 @@ Digital thermometer using [LILYGO® TTGO T-Lite W5500 ESP32](https://www.aliexpr
 
 
 ![LILYGO® TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch (128x64) Oled Type-C USB Programming Development Board](https://raw.githubusercontent.com/haydnady/ThermalcoupleMeter/master/img/lilygo_t-lite.png)
+
 LILYGO® TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch (128x64) Oled Type-C USB Programming Development Board
 
 
