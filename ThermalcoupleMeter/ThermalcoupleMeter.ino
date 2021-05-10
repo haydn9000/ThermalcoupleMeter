@@ -56,8 +56,8 @@ void loop()
   Serial.print("Internal Temp = ");
   Serial.println(thermocouple.readInternal());
 
-  double c = thermocouple.readCelsius();
-  if (isnan(c))
+  double f = thermocouple.readFahrenheit();
+  if (isnan(f))
   {
     Serial.println("Something wrong with thermocouple!");
 
@@ -69,17 +69,18 @@ void loop()
   }
   else
   {
-    Serial.print("C = ");
-    Serial.println(c);
+    Serial.print("F = ");
+    Serial.println(f);
+    
 
     display.clear();
     display.setFont(ArialMT_Plain_24); // Font and size
     display.setTextAlignment(TEXT_ALIGN_CENTER);
-    display.drawString(64, 16, String(c)+"C");
+    display.drawString(64, 16, String(f)+"F");
     display.display();
   }
-  //Serial.print("F = ");
-  //Serial.println(thermocouple.readFahrenheit());
+  //Serial.print("C = ");
+  //Serial.println(thermocouple.readCelsius());
 
   delay(1000);
 }
